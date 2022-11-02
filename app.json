@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "haste-mobile",
+    "slug": "haste-mobile",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
