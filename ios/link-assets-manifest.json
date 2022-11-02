@@ -1,4 +1,37 @@
 {
   "migIndex": 1,
-  "data": []
+  "data": [
+    {
+      "path": "src/assets/fonts/Catamaran-Bold.ttf",
+      "sha1": "af7004e81d7c29cffffcf0b254488dd9f941c65c"
+    },
+    {
+      "path": "src/assets/fonts/Catamaran-ExtraBold.ttf",
+      "sha1": "693c63418e01b07c810606e372c83ec8cdfffe7f"
+    },
+    {
+      "path": "src/assets/fonts/Catamaran-Light.ttf",
+      "sha1": "524de367cd1d3de4f9ecebc3dc70f1f4942509a6"
+    },
+    {
+      "path": "src/assets/fonts/Catamaran-Regular.ttf",
+      "sha1": "8b7489f2e66feebb8ef54da968f756f4b95d4125"
+    },
+    {
+      "path": "src/assets/fonts/Inter-Bold.ttf",
+      "sha1": "48747b7a60086f97af0d373febcbd1f1bee87f17"
+    },
+    {
+      "path": "src/assets/fonts/Inter-ExtraBold.ttf",
+      "sha1": "bff772be6bca9895c6fdcd57e5d5be9a47f2e058"
+    },
+    {
+      "path": "src/assets/fonts/Inter-Light.ttf",
+      "sha1": "dd9ec1ae67dd85143bacf7a3cb37e9f0ac979843"
+    },
+    {
+      "path": "src/assets/fonts/Inter-Regular.ttf",
+      "sha1": "7237d9cf55f177702066a28a4dde1e4c7e8ab576"
+    }
+  ]
 }
