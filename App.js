@@ -7,15 +7,31 @@ import * as SplashScreen from "expo-splash-screen";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import global_styles from "./src/styles/global/global_styles";
-import WelcomePage from "./src/pages/Welcome";
+import WelcomePage from "./src/pages/WelcomePage";
 import HomePage from "./src/pages/HomePage";
+import * as Localization from "expo-localization";
+import { I18n } from "i18n-js";
+import { en } from "./src/i18n/en.js";
+import { pl } from "./src/i18n/pl.js";
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   const [appIsReady, setAppIsReady] = useState(false);
-  // LOAD FONTS
+
+  // i18n Configuration
+  const [locale, setLocale] = useState(Localization.locale);
+  const translations = {
+    en,
+    pl,
+  };
+  const i18n = new I18n(translations);
+  i18n.locale = Localization.locale;
+  I18n.fallbacks = true;
+
+  // Load fonts
   useEffect(() => {
+    // console.log(i18n.locale);
     async function prepare() {
       try {
         await Font.loadAsync({
@@ -33,6 +49,7 @@ export default function App() {
     prepare();
   }, []);
 
+  // Splash screen while loading
   const onLayoutRootView = useCallback(async () => {
     if (appIsReady) {
       await SplashScreen.hideAsync();
