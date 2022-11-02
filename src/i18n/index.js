@@ -11,14 +11,17 @@ const translations = {
 
 const defineLocale = () => {
   i18n.locale = Localization.locale;
-  if (i18n.locale === "pl-PL") i18n.locale = "pl";
+  const supportedLangs = ["en", "pl"];
   if (i18n.locale === "en-US") i18n.locale = "en";
+  if (i18n.locale === "pl-PL") i18n.locale = "pl";
+  if (supportedLangs.indexOf(i18n.locale) === -1) {
+    console.log("locale=FALLBACK");
+    i18n.locale = "en";
+  }
   return i18n.locale;
 };
 
 const i18n = new I18n(translations);
 i18n.locale = defineLocale();
-// i18n.locale = Localization.locale;
-i18n.fallbacks = true;
 
 export default i18n;
