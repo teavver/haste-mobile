@@ -16,13 +16,6 @@ const WelcomeScreen = ({ onPressSignUp, onPressSignIn }) => {
           <Logo />
           <WelcomeTitle />
         </View>
-        <Text style={{ fontSize: 20 }}>DEFAULT FONT</Text>
-        <Text style={{ fontSize: 20, fontFamily: "Inter-Bold" }}>
-          INTER BOLD
-        </Text>
-        <Text style={{ fontSize: 20, fontFamily: "Catamaran-Light" }}>
-          CATAMARAN LIGHT
-        </Text>
         <View style={welcome_buttons_container.container}>
           <SignUpButton onPressSignUp={onPressSignUp} />
           <SignInButton onPressSignIn={onPressSignIn} />
@@ -32,5 +25,15 @@ const WelcomeScreen = ({ onPressSignUp, onPressSignIn }) => {
     </View>
   );
 };
+
+{
+  /* <Text style={{ fontSize: 20 }}>DEFAULT FONT</Text>
+        <Text style={{ fontSize: 20, fontFamily: "Inter-Bold" }}>
+          INTER BOLD
+        </Text>
+        <Text style={{ fontSize: 20, fontFamily: "Catamaran-Light" }}>
+          CATAMARAN LIGHT
+        </Text> */
+}
 
 export default WelcomeScreen;

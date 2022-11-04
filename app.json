@@ -3,8 +3,18 @@
     "name": "haste-mobile",
     "slug": "haste-mobile",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    "icon": "./src/assets/images/icon.png",
+    "splash": {
+      "image": "./src/assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#43FFAF"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/adaptive-icon.png",
+        "backgroundColor": "#43FFAF"
+      }
+    },
+    "assetBundlePatterns": ["**/*"]
   }
 }
