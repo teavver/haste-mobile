@@ -1,11 +1,12 @@
 import global_styles from "../styles/global/global_styles";
-import React, { useState, useEffect, useCallback } from "react";
+import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import SignUpContainer from "../components/organisms/signup/SignUpContainer";
 
 const SignUpPage = () => {
   return (
     <View style={global_styles.main_container}>
-      <Text>SIGN UP</Text>
+      <SignUpContainer />
     </View>
   );
 };

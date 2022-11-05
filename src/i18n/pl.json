@@ -1,3 +1,9 @@
 {
-  "SignUp": "Zarejestruj się"
+  "SignUp": "Zarejestruj się",
+  "SignUpTitle1": "Numer telefonu",
+  "SignUpPlaceholder1": "Twój numer",
+  "SignUpTitle2": "Hasło",
+  "SignUpPlaceholder2": "Twoje hasło",
+  "SignUpButton": "Zarejestruj się",
+  "SignIn": "Zaloguj się"
 }

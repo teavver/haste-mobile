@@ -7,6 +7,5 @@ export default StyleSheet.create({
     justifyContent: "space-around",
     alignItems: "center",
     marginVertical: 40,
-    // backgroundColor: "powderblue",
   },
 });

@@ -1,5 +1,6 @@
 // React
 import React, { useState, useEffect, useCallback } from "react";
+import { useWindowDimensions } from "react-native";
 // Expo
 import * as SplashScreen from "expo-splash-screen";
 import * as Font from "expo-font";
@@ -11,8 +12,8 @@ import I18n from "./src/i18n/index";
 import { View, Text } from "react-native";
 import Dev from "./src/pages/Dev";
 // Utils
-import getDeviceInfo from "./src/utils/deviceInfo";
 import fonts from "./src/utils/loadFonts";
+import isFirstTimeLaunching from "./src/utils/firstTimeLaunch";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -23,20 +24,19 @@ export default function App() {
   useEffect(() => {
     async function prepare() {
       try {
+        console.log("LOADING ASSETS");
         // Pre-load fonts, make any API calls you need to do here
-
-        // console.log(fonts);
-        // await Font.loadAsync(fonts);
-
         // Artificially delay for two seconds to simulate a slow loading
         // experience. Please remove this if you copy and paste the code!
-        console.log("LOADING ASSETS");
+
+        // await Font.loadAsync(fontsLoaded); ??
         await new Promise((resolve) => setTimeout(resolve, 1500));
       } catch (e) {
         console.warn(e);
       } finally {
+        // If all assets loaded, app is ready
+        console.log(fontsLoaded);
         console.log("APP IS READY");
-        // Tell the application to render
         setAppIsReady(true);
       }
     }

@@ -1,18 +1,18 @@
-import React, { useState, useEffect, useCallback } from "react";
+import { useState } from "react";
 import WelcomeScreen from "../components/screens/WelcomeScreen";
+import SignUpPage from "./SignUpPage";
+// import SignInPage
 
 const WelcomePage = () => {
-  const navigateToSignUp = () => {
-    console.log("moving to sign up");
-  };
-  const navigateToSignIn = () => {
-    console.log("sign in");
-  };
+  const [renderSignUpPage, setRenderSignUpPage] = useState(false);
+  const [renderSignInPage, setRenderSignInPage] = useState(false);
 
+  if (renderSignUpPage) return <SignUpPage />;
+  if (renderSignInPage) return null;
   return (
     <WelcomeScreen
-      onPressSignUp={navigateToSignUp}
-      onPressSignIn={navigateToSignIn}
+      onPressSignUp={() => setRenderSignUpPage(true)}
+      onPressSignIn={() => setRenderSignInPage(true)}
     />
   );
 };

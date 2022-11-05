@@ -1,4 +1,9 @@
 {
   "SignUp": "Sign Up",
+  "SignUpTitle1": "Phone number",
+  "SignUpPlaceholder1": "Your phone number",
+  "SignUpTitle2": "Password",
+  "SignUpPlaceholder2": "Your password",
+  "SignUpButton": "Sign Up",
   "SignIn": "Sign In"
 }
