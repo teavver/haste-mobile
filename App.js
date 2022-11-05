@@ -4,11 +4,12 @@ import React, { useState, useEffect, useCallback } from "react";
 import * as SplashScreen from "expo-splash-screen";
 import * as Font from "expo-font";
 import { useFonts } from "expo-font";
-// Other
+// Components + other
 import WelcomePage from "./src/pages/WelcomePage";
 import HomePage from "./src/pages/HomePage";
 import I18n from "./src/i18n/index";
 import { View, Text } from "react-native";
+import Dev from "./src/pages/Dev";
 // Utils
 import getDeviceInfo from "./src/utils/deviceInfo";
 import fonts from "./src/utils/loadFonts";
@@ -55,6 +56,7 @@ export default function App() {
   return (
     <View style={{ flex: 1 }} onLayout={onLayoutRootView}>
       <WelcomePage />
+      {/* <Dev /> */}
     </View>
     // <HomePage />
   );
