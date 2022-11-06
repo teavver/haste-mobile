@@ -7,6 +7,7 @@ import StatusBarUniversal from "../../utils/StatusBarUniversal";
 import welcome_buttons_container from "../../styles/welcome/welcome_buttons_container";
 import SignUpButton from "../molecules/welcome/SignUpButton";
 import SignInButton from "../molecules/welcome/SignInButton";
+import { StatusBar } from "expo-status-bar";
 
 const WelcomeScreen = ({ onPressSignUp, onPressSignIn }) => {
   return (
@@ -21,6 +22,7 @@ const WelcomeScreen = ({ onPressSignUp, onPressSignIn }) => {
           <SignInButton onPressSignIn={onPressSignIn} />
         </View>
       </View>
+      <StatusBar style="dark" />
       <StatusBarUniversal />
     </View>
   );

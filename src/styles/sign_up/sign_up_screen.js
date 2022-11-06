@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
-  sign_up_container: {
+  sign_up_screen: {
     paddingTop: 40,
     width: "100%",
     height: "100%",

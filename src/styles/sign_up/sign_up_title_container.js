@@ -8,7 +8,7 @@ export default StyleSheet.create({
     height: "11%",
     textAlign: "left",
     justifyContent: "center",
-    borderRadius: 30,
+    borderRadius: 32,
     marginVertical: 16,
     backgroundColor: colors.accent_color_inactive,
   },
