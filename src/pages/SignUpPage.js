@@ -18,12 +18,13 @@ const SignUpPage = () => {
 
   const SubmitSignUpData = async () => {
     try {
+      console.log(phone, " ", pwd);
       signupSubmit(phone, pwd);
-      if (signupSubmit(phone, pwd) === true) {
-        console.log("SUCCESS????");
-      }
+      // if (signupSubmit(phone, pwd) === true) {
+      //   console.log("SUCCESS????");
+      // }
     } catch (error) {
-      console.log(error);
+      console.warn(error);
     }
   };
 
