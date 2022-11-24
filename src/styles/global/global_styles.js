@@ -7,4 +7,9 @@ export default StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  main_container_nocenter_vertical: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignContent: "center",
+  },
 });

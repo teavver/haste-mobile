@@ -1,13 +1,10 @@
 import global_styles from "../styles/global/global_styles";
 import React, { useState, useEffect, useCallback } from "react";
 import { StyleSheet, Text, View } from "react-native";
+import HomeScreen from "../components/screens/HomeScreen";
 
 const HomePage = () => {
-  return (
-    <View style={global_styles.main_container}>
-      <Text>HOME</Text>
-    </View>
-  );
+  return <HomeScreen />;
 };
 
 export default HomePage;
