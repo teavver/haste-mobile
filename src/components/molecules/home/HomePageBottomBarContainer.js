@@ -10,7 +10,10 @@ const HomePageBottomBarContainer = () => {
       <View style={bottom_bar.bottombar_logo_container}>
         <Image source={haste} style={bottom_bar.bottombar_logo_img}></Image>
       </View>
-      <View style={bottom_bar.bottombar_content}></View>
+      <View style={bottom_bar.bottombar_content}>
+        <View style={bottom_bar.bottombar_icon}></View>
+        <View style={bottom_bar.bottombar_icon}></View>
+      </View>
     </View>
   );
 };

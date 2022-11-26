@@ -8,10 +8,20 @@ export default StyleSheet.create({
     backgroundColor: colors.dark_mode.main,
   },
   bottombar_content: {
-    bottom: "50%",
-    height: "100%",
-    width: "90%",
+    position: "absolute",
+    width: "100%",
+    height: "92.5%",
     alignSelf: "center",
+    justifyContent: "space-between",
+    flexDirection: "row",
+    // backgroundColor: "red",
+  },
+  bottombar_icon: {
+    alignSelf: "center",
+    width: "12.5%",
+    height: "75%",
+    marginHorizontal: 12,
+    backgroundColor: "grey",
   },
   bottombar_detail_container: {
     width: "50%",

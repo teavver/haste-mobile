@@ -6,12 +6,17 @@ import global_styles from "../../styles/global/global_styles";
 
 const HomeScreen = (props) => {
   return (
-    <View style={global_styles.main_container_nocenter_vertical}>
-      <HomePageTopBarContainer />
-      <HomePageBottomBarContainer />
+    <SafeAreaView
+      style={[
+        global_styles.main_container_nocenter_vertical,
+        { paddingTop: StatusBar.currentHeight },
+      ]}
+    >
       <StatusBar style="dark" />
       <StatusBarUniversal />
-    </View>
+      <HomePageTopBarContainer />
+      <HomePageBottomBarContainer />
+    </SafeAreaView>
   );
 };
 
