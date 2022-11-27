@@ -5,9 +5,10 @@ import { useWindowDimensions } from "react-native";
 import * as SplashScreen from "expo-splash-screen";
 import * as Font from "expo-font";
 import { useFonts } from "expo-font";
-// Components + other
+// Pages + Others
 import WelcomePage from "./src/pages/WelcomePage";
 import HomePage from "./src/pages/HomePage";
+import ProfileCreationPage from "./src/pages/ProfileCreationPage";
 import I18n from "./src/i18n/index";
 import { View, Text } from "react-native";
 import Dev from "./src/pages/Dev";
@@ -51,13 +52,13 @@ export default function App() {
     }
   }, [appIsReady]);
 
-  if (!appIsReady) return null;
-
-  return (
-    <View style={{ flex: 1 }} onLayout={onLayoutRootView}>
-      <HomePage />
-      {/* <WelcomePage /> */}
-      {/* <Dev /> */}
-    </View>
-  );
+  if (appIsReady)
+    return (
+      <View style={{ flex: 1 }} onLayout={onLayoutRootView}>
+        <ProfileCreationPage />
+        {/* <HomePage /> */}
+        {/* <WelcomePage /> */}
+        {/* <Dev /> */}
+      </View>
+    );
 }
