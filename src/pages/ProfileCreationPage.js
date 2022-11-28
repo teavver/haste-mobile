@@ -23,7 +23,7 @@ const ProfileCreationPage = () => {
   if (currentPage === 3) {
     return (
       <View>
-        <Text>Lmao</Text>
+        <Text>Step 3</Text>
       </View>
     );
   }

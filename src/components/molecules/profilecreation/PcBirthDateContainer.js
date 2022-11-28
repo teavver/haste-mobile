@@ -10,19 +10,21 @@ const PcBirthDateContainer = (props) => {
         placeholder="DD"
         onChangeText={props.onChangeTextDay}
         autoFocus={props.autoFocus}
+        value={props.valueDay}
       />
       <PcBirthDateInput
         maxLength={2}
         placeholder="MM"
         onChangeText={props.onChangeTextMonth}
         autoFocus={props.autoFocus}
+        value={props.valueMonth}
       />
       <PcBirthDateInput
         placeholder="YYYY"
         maxLength={4}
         onChangeText={props.onChangeTextYear}
-        value={props.valueYear}
         autoFocus={props.autoFocus}
+        value={props.valueYear}
       />
     </View>
   );

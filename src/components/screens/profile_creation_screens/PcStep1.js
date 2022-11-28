@@ -21,6 +21,9 @@ const PcStep1 = (props) => {
         onChangeTextYear={props.onChangeTextYear}
         onChangeTextMonth={props.onChangeTextMonth}
         onChangeTextDay={props.onChangeTextDay}
+        valueDay={props.valueDay}
+        valueMonth={props.valueMonth}
+        valueYear={props.valueYear}
       />
       <PcNavContainer
         directions={props.directions}
