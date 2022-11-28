@@ -10,17 +10,17 @@ import { StatusBar } from "expo-status-bar";
 const SignUpScreen = (props) => {
   return (
     <View style={sign_up_screen.sign_up_screen}>
-      <SignUpTitleContainer SignUpTitle={"SignUpTitle1"} />
+      <SignUpTitleContainer SignUpTitle={"SignUpPage.Title1"} />
       <SignUpTextInput
-        placeholder={I18n.t("SignUpPlaceholder1")}
+        placeholder={I18n.t("SignUpPage.Placeholder1")}
         onChangeText={props.onChangePhone}
         maxLength={9}
         keyboardType={"number-pad"}
         returnKeyType={"done"}
       />
-      <SignUpTitleContainer SignUpTitle={"SignUpTitle2"} />
+      <SignUpTitleContainer SignUpTitle={"SignUpPage.Title2"} />
       <SignUpTextInput
-        placeholder={I18n.t("SignUpPlaceholder2")}
+        placeholder={I18n.t("SignUpPage.Placeholder2")}
         onChangeText={props.onChangePassword}
         maxLength={32}
         secureTextEntry={true}

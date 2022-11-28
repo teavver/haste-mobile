@@ -5,8 +5,8 @@ export default StyleSheet.create({
     alignSelf: "center",
     width: "75%",
     fontSize: 40,
-    paddingTop: StatusBar.currentHeight + 10, // Looks better
-    paddingBottom: 18,
+    paddingTop: StatusBar.currentHeight + 26, // Looks better
+    // paddingBottom: 18,
     // backgroundColor: "darkblue",
   },
 });

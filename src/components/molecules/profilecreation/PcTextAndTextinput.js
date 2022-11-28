@@ -7,7 +7,10 @@ const PcTextAndTextinput = (props) => {
   return (
     <View style={pc_text_and_textinput.container}>
       <PcText text={props.text} />
-      <PcTextinput placeholder={props.placeholder} />
+      <PcTextinput
+        placeholder={props.placeholder}
+        onChangeText={props.onChangeText}
+      />
     </View>
   );
 };

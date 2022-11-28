@@ -5,14 +5,12 @@ export default StyleSheet.create({
     alignSelf: "center",
     width: 54,
     height: 54,
-    marginHorizontal: 4,
-    // backgroundColor: "rgba(0,255,200,0.25)",
+    marginHorizontal: 20,
   },
   icon: {
     width: 54,
     height: 54,
     borderRadius: 100,
     alignSelf: "center",
-    // backgroundColor: "cyan",
   },
 });

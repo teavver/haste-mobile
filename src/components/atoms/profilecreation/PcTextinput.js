@@ -5,6 +5,7 @@ const PcTextinput = (props) => {
   return (
     <View>
       <TextInput
+        onChangeText={props.onChangeText}
         style={pc_textinput.textinput}
         placeholder={props.placeholder}
         placeholderTextColor="grey"

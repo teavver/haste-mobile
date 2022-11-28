@@ -1,9 +1,20 @@
 {
-  "SignUp": "Sign Up",
-  "SignUpTitle1": "Phone number",
-  "SignUpPlaceholder1": "Your phone number",
-  "SignUpTitle2": "Password",
-  "SignUpPlaceholder2": "Your password",
-  "SignUpButton": "SIGN UP",
-  "SignIn": "Sign In"
+  "SignUpPage": {
+    "SignUp": "Sign Up",
+    "Title1": "Phone number",
+    "Placeholder1": "Your phone number",
+    "Title2": "Password",
+    "Placeholder2": "Your password",
+    "SubmitButtonText": "SIGN UP",
+    "SignIn": "Sign In"
+  },
+  "Pc": {
+    "Step1": {
+      "Title": "Hi there!",
+      "FirstNameText": "What's your name?",
+      "FirstNameTextinputPlaceholder": "Your name",
+      "BirthDateTitle": "What's your birthdate?",
+      "BirthDatePublicPrompt": "Your age will be public"
+    }
+  }
 }

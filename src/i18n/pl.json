@@ -1,9 +1,20 @@
 {
-  "SignUp": "Zarejestruj się",
-  "SignUpTitle1": "Numer telefonu",
-  "SignUpPlaceholder1": "Twój numer",
-  "SignUpTitle2": "Hasło",
-  "SignUpPlaceholder2": "Twoje hasło",
-  "SignUpButton": "ZAREJESTRUJ SIĘ",
-  "SignIn": "Zaloguj się"
+  "SignUpPage": {
+    "SignUp": "Zarejestruj się",
+    "Title1": "Numer telefonu",
+    "Placeholder1": "Twój numer",
+    "Title2": "Hasło",
+    "Placeholder2": "Twoje hasło",
+    "SubmitButtonText": "ZAREJESTRUJ SIĘ",
+    "SignIn": "Zaloguj się"
+  },
+  "Pc": {
+    "Step1": {
+      "Title": "Witaj!",
+      "FirstNameText": "Jak Ci na imię?",
+      "FirstNameTextinputPlaceholder": "Imię",
+      "BirthDateTitle": "Data urodzenia",
+      "BirthDatePublicPrompt": "Twój wiek będzie publiczny"
+    }
+  }
 }

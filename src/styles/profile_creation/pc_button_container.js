@@ -5,6 +5,5 @@ export default StyleSheet.create({
     width: "100%",
     height: 80,
     marginVertical: 12,
-    // backgroundColor: "darkblue",
   },
 });

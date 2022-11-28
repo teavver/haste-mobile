@@ -15,6 +15,7 @@ import Dev from "./src/pages/Dev";
 // Utils
 import fonts from "./src/utils/loadFonts";
 import isFirstTimeLaunching from "./src/utils/firstTimeLaunch";
+import SignUpPage from "./src/pages/SignUpPage";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -59,6 +60,7 @@ export default function App() {
         {/* <HomePage /> */}
         {/* <WelcomePage /> */}
         {/* <Dev /> */}
+        {/* <SignUpPage /> */}
       </View>
     );
 }

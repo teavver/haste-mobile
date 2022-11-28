@@ -10,7 +10,7 @@ const SignUpButtonConfirm = (props) => {
       onPress={props.onPress}
     >
       <Text style={sign_up_button_text.sign_up_button_text}>
-        {I18n.t("SignUpButton")}
+        {I18n.t("SignUpPage.SubmitButtonText")}
       </Text>
     </Pressable>
   );
