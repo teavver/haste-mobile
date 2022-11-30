@@ -20,7 +20,7 @@ const PcBirthDateInput = (props) => {
         onChangeText={props.onChangeText}
         placeholder={props.placeholder}
         value={props.value}
-        keyboardType={props.keyboardType}
+        keyboardType={"number-pad"}
         autoFocus={props.autoFocus}
         textAlign="center"
         placeholderTextColor="grey"

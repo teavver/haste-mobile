@@ -1,7 +1,6 @@
 import { View, Text, SafeAreaView, ShadowPropTypesIOS } from "react-native";
 import PcTextAndTextinput from "../../molecules/profilecreation/PcTextAndTextinput";
 import PcTitleContainer from "../../molecules/profilecreation/PcTitleContainer";
-import PcButtonContainer from "../../molecules/profilecreation/PcButtonContainer";
 import PcNavContainer from "../../molecules/profilecreation/PcNavContainer";
 import StatusBarUniversal from "../../../utils/StatusBarUniversal";
 import PcBirthDateContainer from "../../molecules/profilecreation/PcBirthDateContainer";

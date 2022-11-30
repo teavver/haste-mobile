@@ -1,10 +1,14 @@
 const profileData = {
   firstName: "",
-  birthDate: "",
+  birthDate: {
+    day: "",
+    month: "",
+    year: "",
+  },
   location: [],
   gender: "",
-  targetGender: "",
-  lookingFor: "",
+  targetGender: [],
+  lookingFor: [],
   photos: ["123"],
   interests: [],
   socialsList: [],

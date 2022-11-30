@@ -2,7 +2,6 @@ import { View, Text } from "react-native";
 import { useState } from "react";
 import ProfileCreationStep1 from "./ProfileCreationStep1";
 import ProfileCreationStep2 from "./ProfileCreationStep2";
-import profileData from "../data/profileData";
 
 const ProfileCreationPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
