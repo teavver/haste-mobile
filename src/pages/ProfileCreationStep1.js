@@ -24,11 +24,12 @@ const ProfileCreationStep1 = (props) => {
   };
 
   const checkUserAge = () => {
-    // Date string from birthDate state
+    // User input string to js date format
     const birthDateStr =
       birthDate.year + "/" + birthDate.month + "/" + birthDate.day;
     var today = new Date();
     var date = new Date(birthDateStr);
+    // Calculate user's age
     var age = today.getFullYear() - date.getFullYear();
     var m = today.getMonth() - date.getMonth();
     if (m < 0 || (m === 0 && today.getDate() < date.getDate())) {
@@ -41,11 +42,11 @@ const ProfileCreationStep1 = (props) => {
 
   const validateStepData = () => {
     try {
+      props.onPressRight();
       if (checkUserAge() === true && firstName.length > 0) {
         // If everything is OK, call parent fun to go next page
-        props.onPressRight();
       } else {
-        // Alert na gorze (modal?) o niepoprawnych danych
+        // Display modal with err (todo)
       }
     } catch (err) {
       console.log(err);

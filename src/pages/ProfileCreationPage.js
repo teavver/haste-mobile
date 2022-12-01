@@ -16,7 +16,7 @@ const ProfileCreationPage = () => {
   };
 
   if (currentPage === 1) {
-    return <ProfileCreationStep1 onPressRight={() => updateCurrentPage()} />;
+    return <ProfileCreationStep1 onPressRight={() => updateCurrentPage(1)} />;
   }
   if (currentPage === 2) {
     return (
