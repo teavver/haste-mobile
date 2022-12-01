@@ -6,8 +6,17 @@ import ProfileCreationStep2 from "./ProfileCreationStep2";
 const ProfileCreationPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
+  const updateCurrentPage = (direction) => {
+    // 1 -> Move to next step
+    // 0 -> Move back
+    console.log("updatepage");
+    if (direction === 1) setCurrentPage(currentPage + 1);
+    if (direction === 0) setCurrentPage(currentPage - 1);
+    return;
+  };
+
   if (currentPage === 1) {
-    return <ProfileCreationStep1 onPressRight={() => setCurrentPage(2)} />;
+    return <ProfileCreationStep1 onPressRight={() => updateCurrentPage()} />;
   }
   if (currentPage === 2) {
     return (

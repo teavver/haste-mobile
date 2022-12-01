@@ -1,12 +1,9 @@
 import { View, Text } from "react-native";
 import PcStep1 from "../components/screens/profile_creation_screens/PcStep1";
 import { useState, useEffect } from "react";
-import profileData from "../data/profileData";
 import updateProfileData from "../utils/updateProfileData";
-import { preventAutoHideAsync } from "expo-splash-screen";
 
 const ProfileCreationStep1 = (props) => {
-  const [isDataValid, setIsDataValid] = useState(null);
   const [firstName, setFirstName] = useState("");
   const [birthDate, setBirthDate] = useState({
     day: "",
@@ -45,9 +42,9 @@ const ProfileCreationStep1 = (props) => {
   const validateStepData = () => {
     try {
       if (checkUserAge() === true && firstName.length > 0) {
-        setIsDataValid(true);
+        // If everything is OK, call parent fun to go next page
+        props.onPressRight();
       } else {
-        setIsDataValid(false);
         // Alert na gorze (modal?) o niepoprawnych danych
       }
     } catch (err) {
@@ -63,7 +60,6 @@ const ProfileCreationStep1 = (props) => {
         onChangeTextMonth={updateBirthDate("month")}
         onChangeTextDay={updateBirthDate("day")}
         directions={"rightonly"}
-        // onPressRight={props.onPressRight}
         onPressRight={() => validateStepData()}
       />
     </View>
