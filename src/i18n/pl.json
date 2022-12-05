@@ -15,6 +15,13 @@
       "FirstNameTextinputPlaceholder": "Imię",
       "BirthDateTitle": "Data urodzenia",
       "BirthDatePublicPrompt": "Twój wiek będzie publiczny"
+    },
+    "Step2": {
+      "Title": "Jestem",
+      "GenderMale": "Mężczyzną",
+      "GenderFemale": "Kobietą",
+      "GenderOther": "Inne",
+      "ShowGenderOnProfile": "Pokaż moją płeć na moim profilu"
     }
   }
 }

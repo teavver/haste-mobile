@@ -15,6 +15,13 @@
       "FirstNameTextinputPlaceholder": "Your name",
       "BirthDateTitle": "What's your birthdate?",
       "BirthDatePublicPrompt": "Your age will be public"
+    },
+    "Step2": {
+      "Title": "I am a",
+      "GenderMale": "Male",
+      "GenderFemale": "Female",
+      "GenderOther": "Other",
+      "ShowGenderOnProfile": "Show my gender on my profile"
     }
   }
 }

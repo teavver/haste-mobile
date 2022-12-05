@@ -48,6 +48,7 @@ export default function App() {
 
   const onLayoutRootView = useCallback(async () => {
     console.log("RENDER FINISHED");
+    console.log("------");
     if (appIsReady) {
       await SplashScreen.hideAsync();
     }
